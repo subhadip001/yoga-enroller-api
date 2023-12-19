@@ -61,4 +61,7 @@ The API is developed using FastAPI and the database is SQLite. The API is contai
 4. Install the dependencies with `pip install -r requirements.txt`
 5. Run `uvicorn main:app --reload --port=8000 --host=0.0.0.0`
 
-## API Documentation
+## Screenshots
+
+![image](https://github.com/subhadip001/yoga-enroller-api/assets/78922392/df501763-27af-4a6e-be55-da9e5ccaf9eb)
+
