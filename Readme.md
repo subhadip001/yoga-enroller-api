@@ -5,6 +5,9 @@
 This is a simple API development using FastAPI, Docker and SQLite. The API is a simple operation of Createing User, Enrolling User, calling Mock Payment Route.
 The API is developed using FastAPI and the database is SQLite. The API is containerized using Docker. The API is deployed in Google Cloud Run. The API is documented using Swagger UI.
 
+## API DOCS with SwaggerUI can be found here
+[https://yoga-enroller-eb3lbyeafa-em.a.run.app/docs]
+
 ## ER Diagram and Relationship
 
 ![image](https://github.com/subhadip001/yoga-enroller-api/assets/78922392/c4136758-09d7-46c5-af8a-4a806318d56e)
