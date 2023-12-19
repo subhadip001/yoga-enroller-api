@@ -6,19 +6,27 @@ This is a simple API development using FastAPI, Docker and SQLite. The API is a 
 The API is developed using FastAPI and the database is SQLite. The API is containerized using Docker. The API is deployed in Google Cloud Run. The API is documented using Swagger UI.
 
 ## API DOCS with SwaggerUI can be found here
+
 [https://yoga-enroller-eb3lbyeafa-em.a.run.app/docs]
+
+## Docker Hub URL
+
+[https://hub.docker.com/repository/docker/subhadip01/yoga-enroller/general]
+
+## Frontend Application Repo
+
+[https://github.com/subhadip001/yoga-enroller]
 
 ## ER Diagram and Relationship
 
 ![image](https://github.com/subhadip001/yoga-enroller-api/assets/78922392/c4136758-09d7-46c5-af8a-4a806318d56e)
-
 
 ### Relationships:
 
 - A User can have multiple Enrollments, but each Enrollment is associated with one User. This is a one-to-many relationship from User to Enrollment.
 - A User can make multiple Payments, but each Payment is made by one User. This is a one-to-many relationship from User to Payment.
 - An Enrollment can have multiple Payments, but each Payment is associated with one Enrollment. This is a one-to-many relationship from Enrollment to Payment.
-- The  CheckConstraint in the Enrollment table ensures that the month is between 1 and 12.
+- The CheckConstraint in the Enrollment table ensures that the month is between 1 and 12.
 
 ## Features
 
@@ -83,7 +91,6 @@ The API is developed using FastAPI and the database is SQLite. The API is contai
 - Services are implemented as endpoints
 - Instead of AWS Lambda as shown in diagram Google Cloudrun with docker has been used
 
-
 ## Screenshots
 
 ![image](https://github.com/subhadip001/yoga-enroller-api/assets/78922392/df501763-27af-4a6e-be55-da9e5ccaf9eb)
@@ -99,4 +106,3 @@ The API is developed using FastAPI and the database is SQLite. The API is contai
 7. Removing the CORS problem permanently by making the api in other tech stack like nodejs etc. Due to limited time i have not transferred the api to other stack after finding the error caused by CORS.
 8. If Someone can find way to solve the CORS problem in Google Cloudrun then please Contribute.
 9. Use of Kubernetes for auto management of containers for highly scalable app.
-
