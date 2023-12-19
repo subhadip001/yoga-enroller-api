@@ -5,6 +5,18 @@
 This is a simple API development using FastAPI, Docker and SQLite. The API is a simple operation of Createing User, Enrolling User, calling Mock Payment Route.
 The API is developed using FastAPI and the database is SQLite. The API is containerized using Docker. The API is deployed in Google Cloud Run. The API is documented using Swagger UI.
 
+## ER Diagram and Relationship
+
+![image](https://github.com/subhadip001/yoga-enroller-api/assets/78922392/c4136758-09d7-46c5-af8a-4a806318d56e)
+
+
+### Relationships:
+
+- A User can have multiple Enrollments, but each Enrollment is associated with one User. This is a one-to-many relationship from User to Enrollment.
+- A User can make multiple Payments, but each Payment is made by one User. This is a one-to-many relationship from User to Payment.
+- An Enrollment can have multiple Payments, but each Payment is associated with one Enrollment. This is a one-to-many relationship from Enrollment to Payment.
+- The  CheckConstraint in the Enrollment table ensures that the month is between 1 and 12.
+
 ## Features
 
 - Create User
@@ -60,6 +72,14 @@ The API is developed using FastAPI and the database is SQLite. The API is contai
 3. Activate the virtualenv with `source venv/bin/activate`
 4. Install the dependencies with `pip install -r requirements.txt`
 5. Run `uvicorn main:app --reload --port=8000 --host=0.0.0.0`
+
+## Mock Cloud Architecture
+
+![image](https://github.com/subhadip001/yoga-enroller-api/assets/78922392/e4627dc5-8a7d-4509-b388-fae7f5df4dec)
+
+- Services are implemented as endpoints
+- Instead of AWS Lambda as shown in diagram Google Cloudrun with docker has been used
+
 
 ## Screenshots
 
