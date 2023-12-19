@@ -12,6 +12,16 @@ import time
 
 app = FastAPI()
 
+origins = ["*"]
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    expose_headers=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 
 def get_db():
     db = SessionLocal()
@@ -151,12 +161,3 @@ async def root():
     return {"message": "This is a test"}
 
 
-origins = ["*"]
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=origins,
-    allow_credentials=True,
-    expose_headers=["*"],
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
