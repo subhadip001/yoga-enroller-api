@@ -20,7 +20,9 @@ The API is developed using FastAPI and the database is SQLite. The API is contai
 
 ## Problems Occured
 
-- The deployed (in Cloudrun) API is not working because of CORS problem in FASTAPI. The API is working fine in local machine. The problem is with the database connection.
+- The deployed (in Cloudrun) API is not working in the client application because of CORS problem in FASTAPI. The API is working fine in local machine. The problem is with the database connection.
+
+- The deployed API can be tested using Postman or Swagger UI. But the client application is not able to access the API because of CORS problem.
 
 - Using CORS middleware in FASTAPI or allowing wildcard origin in FASTAPI or applying some other possible solutions are also not working.
 
