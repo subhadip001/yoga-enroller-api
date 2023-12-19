@@ -85,3 +85,15 @@ The API is developed using FastAPI and the database is SQLite. The API is contai
 
 ![image](https://github.com/subhadip001/yoga-enroller-api/assets/78922392/df501763-27af-4a6e-be55-da9e5ccaf9eb)
 
+## Future Scope of Improvement
+
+1. Add a Authentication System
+2. Add a Dashboard to view the status of enrollment to the user
+3. Changing of the Batch by the user can be added in the Dashboard
+4. Add a Admin Dashboard to view the status of enrollment of all the users
+5. UI can be improved by adding animations and transitions
+6. Adding CI/CD for deployment of the docker image on pushing to dockerhub to Cloudrun
+7. Removing the CORS problem permanently by making the api in other tech stack like nodejs etc. Due to limited time i have not transferred the api to other stack after finding the error caused by CORS.
+8. If Someone can find way to solve the CORS problem in Google Cloudrun then please Contribute.
+9. Use of Kubernetes for auto management of containers for highly scalable app.
+
